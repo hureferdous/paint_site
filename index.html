@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>The Paint Store</title>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" type="text/css" href="css/style.css">
+       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/cycle.js"></script>
+       
+
+   </head>
+   <body>
+       <header id="header_container">
+   	       <div id="top">
+   	   	    <div id="top_header">
+              <div id="logo">
+	  	        <img src="images/logo.png" class="logo_img" alt="PaintLogo" />
+              </div>
+              <div id="company"><p>The Paint Store</p></div>
+	          </div>
+	         <nav id="main_nav">
+	  	     <ul>
+	  	  	   <li><a href="#" class="active" >Home</a></li>
+	  	  	   <li><a href="#">About</a></li>
+	  	  	   <li><a href="#">Color Range</a></li>
+	  	  	   <li><a href="#">Store Locator</a></li>
+	  	  	   <li><a href="#">Retailers</a></li>
+	  	  	   <li><a href="#">Contact</a></li>
+	  	    </ul>	 	
+	       </nav>
+   	   </div>
+     </header>
+	  
+	  <section id="slide_container">
+           
+              <div id="slideshow" class="cycle-slideshow" 
+                   data-cycle-fx="fade" 
+                   data-cycle-manual-fx="scrollHorz" 
+                   data-cycle-manual-speed="300"
+                   data-cycle-prev="#prev"    
+                   data-cycle-next="#next"
+                   data-cycle-speed="400"  
+                   data-cycle-timeout="4000">
+                   <img src="images/slide_pic4.jpg" alt="slide_pic1" /> 
+                   <img src="images/slide_pic6.jpg" alt="slide_pic2" />  
+                   <img src="images/slide_pic2.jpg" alt="slide_pic3" />  
+               </div>
+               <div id="prev_c"><img id="prev" src="images/pre_pic1.jpg"/></div>
+               <div id="next_c"><img id="next" src="images/next_pic4.jpg"/></div>
+	  	        
+	  </section>
+    <section id="home_container">
+             <h2> Sign up For Exclusive Offers </h2>
+                 <div id="home">
+                   <div class="home_gallery ">
+                        <a href="#">
+                          <img src="images/slide_pic1.jpg" alt="" />
+                        </a>
+                        <div class="gallery_text">
+                          <a href="#"> Explore Our Color Range</a>
+                          <hr>
+                          <p>House Beautiful's tips, tricks and expert advice on what paint colors work for what rooms, how to choose colors and how to take care of your walls once they are finally painted.</p>
+                        </div>
+                    </div>
+                   <div class="home_gallery "> 
+                        <a href="#">
+                          <img src="images/slide_pic4.jpg" alt=""/>
+                        </a>
+                         <div class="gallery_text">
+                          <a href="#"> Sign up For Exclusive Offers</a>
+                           <hr>
+                          <p>House Beautiful's tips, tricks and expert advice on what paint colors work for what rooms, how to choose colors and how to take care of your walls once they are finally painted.</p>
+                        </div>
+                    </div>
+                   <div class="home_gallery ">
+                          <a href="#">
+                          <img src="images/slide_pic6.jpg" alt="" />
+                          </a>
+                           <div class="gallery_text">
+                          <a href="#"> Locate At Store</a>
+                           <hr>
+                          <p>House Beautiful's tips, tricks and expert advice on what paint colors work for what rooms, how to choose colors and how to take care of your walls once they are finally painted.</p>
+                        </div>
+                    </div>
+         </div>           
+    </section>
+    <section id="calculator_container">
+             <h2>There is Free Dalivery On Every Purchase.</h2>
+             <div id="calculator">
+                  <h3 class="contact_h3">Paint Calculator</h3>
+                  <hr class="calculator_hr">
+                  <h4 class="contact_h4">
+                    You can calculate the cost of the paint by using given measurement.
+                    2.5L Cans for £18.23.
+                    <br>
+                    2.5 L Can will cover 32.5 Sqm.
+                  </h4> 
+                  <form id="calculate_form" name="calculate_form">
+                        <input type="display" name="result" placeholder="0" class="display">
+                        <br>
+                        <input type="button" value="7"  class="calculate_button" name="7" onClick="run7()" />
+                        <input type="button" value="8"  class="calculate_button" name="8" onClick="run8()"/>
+                        <input type="button" value="9"  class="calculate_button" name="9" onClick="run9()" />
+                        <input type="button" value="+"  class="calculate_button" name="+" onClick="runplus()" />
+                           <br>
+                        <input type="button" value="4"  class="calculate_button" name="4" onClick="run4()" />
+                        <input type="button" value="5"  class="calculate_button" name="5" onClick="run5()" />
+                        <input type="button" value="6"  class="calculate_button" name="6" onClick="run6()" />
+                        <input type="button" value="-"  class="calculate_button" name="-" onClick="runminus()" />
+                           <br>   
+                        <input type="button" value="3"  class="calculate_button" name="3" onClick="run3()" />
+                        <input type="button" value="2"  class="calculate_button" name="2" onClick="run2()" />
+                        <input type="button" value="1"  class="calculate_button" name="1" onClick="run1()" />
+                        <input type="button" value="*"  class="calculate_button" name="*" onClick="runmult()" />
+                           <br>   
+                        <input type="button" value="0"  class="calculate_button" name="0" onClick="run0()" />
+                        <input type="button" value="%"  class="calculate_button" name="%" onClick="runpersent()" />
+                        <input type="button" value="."  class="calculate_button" name="." onClick="runpoint()" />
+                        <input type="button" value="/"  class="calculate_button" name="/" onClick="rundiv()" />
+                           <br>    
+                         <input type="button" value="="  class="clear_button" onClick="evalop()" />
+                         <input type="button" value="C"  class="clear_button" name="|" onClick="runclear()" />       
+
+                  </form>
+
+             </div>
+             <div id="contact">
+                    <h3 class="contact_h3">Contact Us</h3> 
+                  <hr class="calculator_hr">
+                 <h4 class="contact_h4"> We did like to help!
+                            We like to create things with fun, open-minded people. Feel free to say hello!</h4>
+                           <P>Tel: 1234 567890</P>
+                          <p>Email: info@thepaintstore.co.uk</p>
+                 
+                 <form id="contact_form" action="">
+                        <input  class="contact_form_input" type="text" name="fname" placeholder="Your Name" /><br>
+                        <input  class="contact_form_input" type="email" name="user_email" placeholder="Your Email" /><br>
+                        <textarea>
+                         Send Message
+                        </textarea>
+                        <input type="submit" value="Submit" />
+                               
+                 </form> 
+
+             </div>
+
+             <div id="footer_container">
+                   <h4>You can follw us on </h4>
+                   <ul>
+                      <li><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" id="facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" id="twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true" id="pinterest"></i></a></li>
+                   </ul>
+
+                  <div class="footer_text"> 
+                   <p>On screen and printer color representations may vary from actual paint colours.</p>
+                 </div>
+             
+             </div>
+             
+     </section>
+  </body>
+        
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+       <script type="text/javascript" src="js/cycle.js"></script>
+       <script type="text/javascript" src="js/slideshow.js"></script>
+       <script type="text/javascript"  src="js/calculator.js"></script>
+
+</html>
